@@ -1,0 +1,172 @@
+<!DOCTYPE html> <!--cho biết tài liệu viết bằng html phiên bản nào-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            width: 200px;
+        }
+    </style>
+</head>
+<img>
+ <h1>TEXT</h1> <!--^ mức độ-->
+ <br> <!--thẻ xuống dòng-->
+ <p>xác định đoạn văn bản</p><!--xác định 1 đoạn văn bản-->
+ <br>
+ <b>chữ in đậm</b>
+ <br>
+ <i>chữ in nghiêng</i>
+ <br>
+<strong>nhấn mạnh nội dung</strong><!--hiển thị bằng chữ in đậm-->
+<br>
+<em>nhấn mạnh sự thay đổi</em><!--hiển thị chữ in nghiêng-->
+<br>
+<blockquote>trích dẫn từ 1 nguồn nào đó</blockquote>
+<br>
+<p>trích dẫn ngắn</p> <!--thường để trong ngoặc kép-->
+<br>
+<abbr title="Đoàn Thành">ĐT</abbr> <!--dánh dấu cụm từ viết tắt-->
+<br>
+<cite>Nam đồng</cite> <!--chỉ ra tác giả hoặc nguồn-->
+<br>
+<ins>name</ins> <!--chữ gạch chân-->
+<br>
+<del>xóa</del><!--đánh giấu đoạn văn bản đã xóa-->
+
+<h1>LIST</h1>
+<ol> <!--tạo danh sách có thưs tự-->
+    <li>Muc 1</li> <!--đánh dấu mục trong danh sách ol và ul-->
+    <li>Muc 2</li>
+</ol>
+
+<ul><!--tạo danh sách không thứ tự-->
+  <li>Muc 1</li>
+  <li>Muc 2</li>
+</ul>
+<dl>
+<dt>thuộc tính 1</dt>
+<dd>giá trị 1</dd>
+
+<dt>thuộc tính 2</dt>
+<dd>giá trị 2</dd>
+
+</dl>
+
+<h1>LINKS</h1>
+
+<a href="#  ">liên kết với các link khác</a> <!--tạo liên kết giữa ác trang web-->
+<br>
+<a href="mailto:thanh@gmail.com">gui email</a> <!--thêm mailto để tạo liên kết tới 1 địa chỉ email để gửi mail-->
+<br>
+<a href="thanh" target="_blank">face</a> <!--để mở liên kết trong một tab mới thì dùng target-->
+
+<h1>IMAGES</h1>
+
+<img src="./anh1.jpg" alt="ảnh đại diện" title="ảnh đại diện" height="100px" width="50px" >
+
+ <!--src đường dân đến link ảnh--> <!--alt ảnh không hiện thì sẽ hiển thị ra thông tin alt--> <!--title hiển thị nội dung ảnh-->
+ <!--height độ cao của ảnh--> <!--width chiều dài ảnh-->
+
+<figure> <!--nhóm phần tử liên quan như hình ảnh vs chú thích vs nhâu có thể có nhiều hình ảnh trong figure miễn là cùng caption-->
+    <img src="./anh1.jpg" alt="ảnh đại diện" title="ảnh đại diện" height="100px" width="50px" >
+    <img src="./anh1.jpg" alt="ảnh đại diện" title="ảnh đại diện" height="100px" width="50px" >
+
+    <figcaption>ảnh đại diện</figcaption>
+</figure>
+
+<h1>TABLE</h1>
+
+<table border="1">
+    <tr> <!--thể hiện 1 hàng-->
+        <th>ô 1 hàng 1</th><!--mỗi ô của bảng đc biểu diễn bằng th hoặc td-->
+        <td>ô 2 hàng 1</td>
+    </tr> 
+
+    <tr> 
+        <th>ô 1 hàng 2</th>
+        <td>ô 2 hàng 2</td>
+    </tr> 
+
+    <tr> 
+        <th colspan="2">ô 1 hàng 2</th> <!--colspan được sử dụng để chỉ định số cột mà một ô nên mở rộng trên hàng hiện tại-->
+        <td rowspan="2">ô 2 hàng 2</td> <!--rowspan được sử dụng để chỉ định số hàng mà một ô nên mở rộng trên cột hiện tại.-->
+    </tr> 
+   
+</table>
+ 
+
+<table border="1">
+    <thead> <!--nhóm nội dung các dòng phần đẩu table thường mô tả nội dung cột-->>
+        <tr>
+           <th>cột 1</th>
+           <th>cột 2</th>
+           <th>cột 3</th>
+           <th>cột 4</th>
+        </tr>
+    </thead>
+    <tbody><!--chứa các dòng dữ liệu của bảng. Đây là nơi các dòng dữ liệu chính của bảng được đặt.-->
+        <tr>
+            <td>nd 1</td>
+            <td>nd 2</td>
+            <td>nd 3</td>
+            <td>nd 4</td>
+        </tr>
+    </tbody>
+    <tfoot> <!--được sử dụng để chứa các tổng kết hoặc thông tin khác liên quan đến dữ liệu trong bảng.-->
+        <tr>
+            <td>kt 1</td>
+            <td>kt 2</td>
+            <td>kt 3</td>
+            <td>kt 4</td>
+        </tr>
+    </tfoot>
+</table>
+
+<h1>FORM</h1>
+
+<form style="display:flex; flex-direction: column;" action="" method="">  <!--để tạo một biểu mẫu, cho phép người dùng nhập thông tin và gửi dữ liệu đến máy chủ để xử lý-->
+ <label>input1</label>
+ <input type="text" name ="input1" >
+
+ <label>input2</label>
+ <input type="number" name ="input2" >
+
+ <label>input3</label>
+ <input type="date" name ="input3" >
+
+ <label>input4</label>
+ <input type="email" name ="input4" >
+
+ <label>input5</label>
+ <input type="radio" name ="input5" >
+
+ <label>input6</label>
+ <input type="checkbox" name ="input6" >
+
+ <label>input7</label>
+ <input type="search" name ="input7" >
+
+
+ <label>textarea</label>
+ <textarea style="width: 200px;">value</textarea>
+
+ <label>select</label>
+ <select name="select" style="width: 200px;;">
+    <option value="1" selected="selected">1</option>
+    <option value="2" >2</option>
+    <option value="3" >3</option>
+ </select>
+
+ <label>input1</label>
+ <input type="submit" name="submit" >
+ <input type="reset" name="reset">
+
+
+
+</form>
+
+
+</body>
+</html>

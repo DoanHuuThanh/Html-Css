@@ -1,0 +1,22 @@
+-truy cập trang web thông qua máy chủ tên miền(DNS-Domain Name System)
+-DNS sẽ cho biết vị trí lưu trữ trang web
+
+1.truy cập web thông qua dịch vụ internet 
+2.máy tính kết nối với Server DNS và cho biết địa chỉ IP liên kết với tên miền
+3.DNS cho phép browser liên hệ với web server lưu trữ trang web
+4.máy chủ web gửi trang web đc yêu cầu 
+
+-trình duyệt nhận Html,Css từ máy chủ 
+-Html,Css để kiểm soát giao diện trang web
+
+-nội dung trang web chứa trong thẻ <html>
+-<></>bắt đầu và kết thúc 1 thẻ html, kí tự bên trong thẻ thể hiện mục đích của thẻ
+-attribute cung cấp thông tin bổ sung phần tử đó
+-mọi thứ hiển thị trên trang web được chứa trong thẻ body
+-<head> chứa thông tin  tài liệu Html
+
+-vị trí của thẻ img đặt trong mã ảnh hưởnh đến cách hiển thị
+1.hình ảnh trang web thường ở định dạnh jpeg,gif,png
+2.lưu hình ảnh có cùng height và width khi xuất hiện trên web
+3.lưu hình ảnh ở độ phân giải cao mất nhiều thời gian tải xuống
+-logo hình minh họa là màu phẳng 
